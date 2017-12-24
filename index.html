@@ -1,17 +1,50 @@
 <!DOCTYPE html>
-
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Crystal Game</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<meta charset="utf-8">
+	<title>Crystal Collector</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-  <body>
+<body>
 
-    <h1> Helloo World!!! </h1>
+	<div><h1>Crystal Collector</h1></div>
 
-    <script src="game.js"></script>
+	<div class="instruction">
+		<ol>
+			<h2>Instructions</h2>
+			<li>You will be given a random number at the start of the game.</li>
+			<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+			<li>You win the game matching your total score to random number, you lose the game if your total score goes above the randon number.</li>
+			<li>The value of each crystal is hidden from you untill you click on it.</li>
+			<li>Each time when the game starts, the game will change the value of each crystal.</li>
+		</ul>
+	</div>
 
-  </body>
+	<div class="randomScore">
+		<div id="random"></div>
+		<div id="score">Score board</div>
+	</div>
+
+	<div class="crystalsDisplay">
+		<img id="amberCrystal" class="crystal" src="assets/images/">
+		<img id="blueCrystal" class="crystal" src="assets/images/">
+		<img id="greenCrystal" class="crystal" src="assets/images/">
+		<img id="redCrystal" class="crystal" src="assets/images/g">
+	</div>
+
+	<div class="total">
+		Your total score is
+		<div id="total-score">Total Score</div>
+	</div>
+
+	<footer>
+		<p>Copyright &copy; 2017 Leonardo Fernandez</p>
+	</footer>
+
+	<script src="game.js"></script>
+</body>
 </html>

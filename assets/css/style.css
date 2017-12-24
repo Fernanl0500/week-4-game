@@ -1,3 +1,119 @@
-body{
-  background-color: red;
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+	background: url("../images/background_3.jpg");
+	background-size: cover;
+}
+
+div, footer{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instruction, .randomScore, .crystalsDisplay, #total-score, footer {
+    padding: 10px;
+}
+
+h1 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 60px;
+	font-weight: 900;
+	text-align: center;
+	text-shadow: 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+	padding: 30px;
+}
+
+
+h2 {
+	font-size: 20px;
+	font-family: Impact, Charcoal, sans-serif;
+	padding-bottom: 10px;
+	margin-bottom:10px;
+	border-bottom: dotted 2px;
+}
+
+
+img {
+	margin-right: 10px;
+	-moz-transition: all .2s ease-out;
+ 	-webkit-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+img:hover {
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	filter: drop-shadow(5px 5px 5px yellow);
+}
+
+.randomScore {
+	overflow: auto;
+}
+
+#random, #score, .total {
+	width:40%;
+	padding: 20px;
+	text-align: center;
+	background: url("../images/paint.jpg");
+	background-size: cover;
+	border-style: solid;
+	border-width: 10px;
+	-moz-border-image: url(../images/wood.png) 55 56 56 55 repeat;
+	-webkit-border-image: url(../images/wood.png) 55 56 56 55 repeat;
+	-o-border-image: url(../images/wood.png) 55 56 56 55 repeat;
+	border-image: url(../images/wood.png) 55 56 56 55 repeat;
+}
+
+#random {
+	float: left;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 25px;
+	color: #1a5a09;
+}
+
+#score {
+	float: right;
+	font-family: Arial Black, Gadget, sans-serif;
+    font-size: 15px;
+    color: #0a0aa2;
+	text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+}
+
+.crystalsDisplay {
+	text-align: center;
+}
+
+.total {
+	width: 50%;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 20px;
+}
+
+#total-score {
+	color: #b50505;
+}
+
+.new-element {
+	color: #63350f;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 20px;
+	text-shadow: none;
+	padding: 7px;
+	background: url(../images/glitter2.gif);
+	background-size: cover;
+	border-radius: 30px;
+	box-shadow: 0 0 19px 4px #deb02c;
+}
+
+footer {
+	text-align: center;
+	color: #472a22;
 }
